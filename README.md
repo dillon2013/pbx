@@ -4,7 +4,7 @@ This test is designed for potential full stack developers to demonstrate their c
 
 When you are commiting changes, please do this in a way you would do it in a normal development process.
 
-The test does not have any intentional bugs. So if you do find any, you can relay them back to us. Start by creating a fork, add your changes and send us a link back to your work.
+The test does not have any intentional bugs. So if you do find any, you can relay them back to us. Start by cloning the repository, add your changes and send us a link back to your work.
 
 ## Deliverable
 
@@ -17,16 +17,18 @@ This is what a single product card should look like:
 ![listing page product card example](/public/images/design.png)
 
 Behaviour of product cards at differen't breakpoints:
+
 - Mobile (320px > screen < 480px): one product card per row
 - Tablet (480px > screen < 768px): two product cards per row
 - Desktop (768 px > screen < inf): three product cards per row
 
 The product cards should be contained within 1024px and be aligned in the centre.
 
-If the user types in any other URL, it should return a basic 404 page. Keep it stateless, if possible. If you want to impress, change express to koa and use redux.
+If the user types in any other URL, it should return a basic 404 page. Keep it stateless, if possible.
 
 ## Main commands
-``` bash
+
+```bash
 # Install the dependencies
 yarn install
 
@@ -38,7 +40,8 @@ yarn test
 ```
 
 ## Other useful commands
-``` bash
+
+```bash
 # Create a production build
 yarn build
 

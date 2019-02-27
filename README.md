@@ -31,7 +31,7 @@ If the user types in any other URL, it should return a basic 404 page. Keep it s
 yarn install
 
 # Run website in dev (hot reload) mode ( http://localhost:3000 )
-yarn dev
+yarn start
 
 # Run the unit tests
 yarn test
@@ -39,12 +39,10 @@ yarn test
 
 ## Other useful commands
 ``` bash
-# Create a development build
-yarn build:dev
-
 # Create a production build
-yarn build:prod
+yarn build
 
 # Serve content from build folder
-yarn serve
+yarn global add serve
+serve -s build
 ```

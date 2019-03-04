@@ -16,7 +16,7 @@ This is what a single product card should look like:
 
 ![listing page product card example](/public/images/design.png)
 
-Behaviour of product cards at differen't breakpoints:
+Behaviour of product cards at different breakpoints:
 
 - Mobile (320px > screen < 480px): one product card per row
 - Tablet (480px > screen < 768px): two product cards per row

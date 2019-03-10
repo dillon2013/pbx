@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "concurrently": "^4.1.0",
+    "enzyme-adapter-react-16": "^1.10.0",
     "express-handlebars": "^3.0.0",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",

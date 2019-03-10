@@ -27,7 +27,7 @@ function ProductCard ({product}) {
         <p>{ description }</p>
       </div>
       <footer className="wrapper">
-        <p>From <span>{ currency }{ price }</span></p>
+        <p>From <span>{ currency }{ formatCurrency(price) }</span></p>
         <a href={ ctaLink }><button>{ cta }</button></a>
       </footer>
     </div>
@@ -51,5 +51,13 @@ ProductCard.prototype = {
 }
 
 export {
-  ProductCard
+  ProductCard,
+  formatCurrency
+}
+
+/*************************************************/
+
+function formatCurrency (price) {
+  const units = Number(price) / 100;
+  return units.toFixed(2);
 }

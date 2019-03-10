@@ -21,14 +21,14 @@ function ProductCard ({product}) {
       <header className="wrapper">
         <img src={ path } alt={ alt }/>
       </header>
-      <div className="label"><span>{ productLabel }</span></div>
+      { productLabel &&  <div className="label"><span>{ productLabel }</span></div> }
       <div className="wrapper">
         <h2>{ title }</h2>
         <p>{ description }</p>
       </div>
       <footer className="wrapper">
         <p>From <span>{ currency }{ formatCurrency(price) }</span></p>
-        <a href={ ctaLink }><button>{ cta }</button></a>
+        <a href={ ctaLink }>{ cta }</a>
       </footer>
     </div>
 

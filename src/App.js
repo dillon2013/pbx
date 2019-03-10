@@ -1,23 +1,16 @@
 import React from 'react';
-import { ProductCard } from "./components/ProductCard";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {Products} from "./components/Products";
 
-const product = {
-  "description": "Lets your pictures speak for themselves.",
-  "image": {
-    "path": "/images/product.jpg",
-  },
-  "price": 1500,
-  "currency": "£",
-  "priceLabel": "From",
-  "productLabel": "bestseller",
-  "cta": "Shop Now",
-  "ctaLink": "/random/link/to/no/where"
-}
-
-const App = () => {
-  return <main>
-    <ProductCard product={product}/>
-  </main>;
-};
+const App = () => (
+  <Router>
+    <Switch>
+      <div className="container">
+        <Route exact path="/" component={Products}/>
+        <Route component={() => <h1>Page not found.</h1>}/>
+      </div>
+    </Switch>
+  </Router>
+);
 
 export default App;

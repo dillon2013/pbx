@@ -42,7 +42,7 @@ describe('ProductCard', () => {
 
   it('should display a "shop now" button', () => {
     expect(wrapper.find('a').prop('href')).toEqual("/random/link/to/no/where");
-    expect(wrapper.find('a button').text()).toEqual("Shop Now");
+    expect(wrapper.find('a').text()).toEqual("Shop Now");
   });
 
 });
